@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/CoffeeMachine
+    username: root
+    password: root
+    driverClassName: org.postgresql.Driver
+recipe:
+  espresso:
+    water: 100
+    coffee: 30
+  americano:
+    water: 150
+    coffee: 25
+  cappuccino:
+    water: 75
+    coffee: 25
+    milk: 75
